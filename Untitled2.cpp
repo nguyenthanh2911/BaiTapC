@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-// Recursive function to calculate compound interest
+
 float lai_kep(float y, int n, float x) {
     if (n == 0)
         return y;
@@ -8,19 +8,19 @@ float lai_kep(float y, int n, float x) {
 }
 
 int main() {
-    float y; // Initial amount
-    int n; // Number of years
-    float x; // Fixed interest rate
+    float y; 
+    int n; 
+    float x; 
 
-    printf("Enter the initial amount (y): ");
+    printf("nhap tien (y): ");
     scanf("%f", &y);
-    printf("Enter the number of years (n): ");
+    printf("nam (n): ");
     scanf("%d", &n);
-    printf("Enter the fixed interest rate (x): ");
+    printf("lai suat (x): ");
     scanf("%f", &x);
 
     float final_amount = lai_kep(y, n, x);
-    printf("Final amount after %d years: %.2f\n", n, final_amount);
+    printf("so tien sau  %d nam: %.2f\n", n, final_amount);
 
     return 0;
 }
